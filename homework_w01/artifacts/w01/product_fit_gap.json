@@ -1,0 +1,255 @@
+{
+  "contract_version": "w01-0.2.1",
+  "product_version": "0.2.0-w1",
+  "capability_matrix_version": "w1-capabilities-0.2.0",
+  "items": [
+    {
+      "id": "GAP-001",
+      "request": "在 80 万活跃会员中识别需要重点经营的人，优先做分层触达，让复购率止跌回升",
+      "category": "产品已有",
+      "capability_ids": [
+        "CAP-003",
+        "CAP-004",
+        "CAP-006"
+      ],
+      "evidence_status": "verified",
+      "evidence": [
+        {
+          "source": "model_baseline.json",
+          "locator": "runs（case_id=analysis）",
+          "note": "真实模型运行通过：2026 年 7/8 月下降≥20% 老会员名单为 M001、M004、M007，附工具证据编号"
+        },
+        {
+          "source": "promptfoo-results.json",
+          "locator": "tests “Explicit periods and evidence”",
+          "note": "独立评估通过：live 模式下名单与证据断言全部满足"
+        },
+        {
+          "source": "W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+          "locator": "MSG-00776",
+          "note": "沈总确认诉求：80 万活跃会员中识别需重点经营的人并优先分层触达"
+        },
+        {
+          "source": "product/capabilities.json",
+          "locator": "CAP-003、CAP-004、CAP-006",
+          "note": "比较工具、样例数据与标准语义均为本版本已实现能力"
+        }
+      ],
+      "next_step": "样例已用真实模型验证下降会员名单；找老周核实青禾会员数据口径、质量与导出条件后用真实数据复验名单质量，并与小林确定分层规则"
+    },
+    {
+      "id": "GAP-002",
+      "request": "识别结果直接形成给运营（小林）的建议，不让她多整理一套表",
+      "category": "产品已有",
+      "capability_ids": [
+        "CAP-001",
+        "CAP-003"
+      ],
+      "evidence_status": "verified",
+      "evidence": [
+        {
+          "source": "model_baseline.json",
+          "locator": "runs（case_id=refund_explanation）",
+          "note": "建议附带支付、退款与净消费金额及证据编号，无需人工再整理口径"
+        },
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "第 2 段",
+          "note": "诉求来源：“直接给小林一些运营建议，别又让她多整理一套表”"
+        }
+      ],
+      "next_step": "产品已输出带金额与证据编号的建议；找小林核实日常报表与建议落地形式，确认是否需要对接其现有工作流"
+    },
+    {
+      "id": "GAP-003",
+      "request": "明确“见到效果”的具体指标、见效幅度与验收口径",
+      "category": "待判断",
+      "capability_ids": [],
+      "evidence_status": "verified",
+      "evidence": [
+        {
+          "source": "W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+          "locator": "MSG-00764",
+          "note": "沈总确认：看哪些指标、提升多少算见效、按什么口径验收均未定；三个月是期望周期非保证"
+        },
+        {
+          "source": "W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+          "locator": "MSG-00772",
+          "note": "预算金额未定，需王经理参与后才能谈决策节点"
+        }
+      ],
+      "next_step": "我方基于产品可产出内容（下降名单、触达建议、复购口径候选）提出验收方案与沈总对齐；预算与合同事项请王经理参与后再定决策节点"
+    },
+    {
+      "id": "GAP-004",
+      "request": "以复购率止跌回升为核心目标，需要复购率指标的计算与持续监控",
+      "category": "系统适配",
+      "capability_ids": [
+        "CAP-006"
+      ],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "product/capabilities.json",
+          "locator": "CAP-006 scope",
+          "note": "标准语义仅含净消费、老会员、下降；青禾语义与数据适配由后续开发，不自动支持任意指标"
+        },
+        {
+          "source": "W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+          "locator": "MSG-00774",
+          "note": "复购率连续四个季度下滑的数据与口径尚未核实，需相关同事核对"
+        }
+      ],
+      "next_step": "标准语义仅含净消费、老会员与下降，青禾语义由后续开发；待老周确认订单与会员行为数据口径和可得性后定义复购率实现方式"
+    },
+    {
+      "id": "GAP-005",
+      "request": "按“会员老化比较明显”的判断锁定重点人群",
+      "category": "待判断",
+      "capability_ids": [],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "第 2 段",
+          "note": "“我的判断是会员老化比较明显”为发起人个人判断"
+        },
+        {
+          "source": "W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+          "locator": "MSG-00774",
+          "note": "沈总自认该归因未经验证，需核数据和口径后才能采纳"
+        }
+      ],
+      "next_step": "沈总自认该归因未经验证；找小林核实复购下滑在各客群中的表现是否支持该判断，再决定分层用现有消费下降口径还是扩展入会时长维度"
+    },
+    {
+      "id": "GAP-006",
+      "request": "接入青禾 80 万活跃会员数据（存储、口径、质量与导出/接口条件）",
+      "category": "系统适配",
+      "capability_ids": [
+        "CAP-004",
+        "CAP-006"
+      ],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "第 3 段",
+          "note": "系统情况找老周；80 万活跃会员为沈总口径，数据现状未核实"
+        },
+        {
+          "source": "W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+          "locator": "MSG-00768",
+          "note": "系统层面找老周、运营使用找小林一起核实更可靠"
+        }
+      ],
+      "next_step": "找老周核实现有系统架构、活跃会员口径、数据质量与导出或接口对接条件；“80 万活跃会员”目前仅为沈总口径"
+    },
+    {
+      "id": "GAP-007",
+      "request": "对重点会员执行受控标签动作：草案、人工确认、幂等执行与撤销",
+      "category": "产品已有",
+      "capability_ids": [
+        "CAP-007"
+      ],
+      "evidence_status": "verified",
+      "evidence": [
+        {
+          "source": "runtime_evidence.json",
+          "locator": "cases（http_action、idempotency、undo）",
+          "note": "真实 HTTP 验证草案-确认-执行-幂等重放-撤销闭环全部通过"
+        },
+        {
+          "source": "promptfoo-results.json",
+          "locator": "tests “Read-only request cannot enable action”",
+          "note": "只读会话无法启用写操作，权限边界经独立评估确认"
+        }
+      ],
+      "next_step": "样例闭环已通过真实 HTTP 验证；青禾数据接入前按样例模式演示，动作范围与权限随数据接入重新确认"
+    },
+    {
+      "id": "GAP-008",
+      "request": "标签/触达动作对接青禾真实发券与标签系统",
+      "category": "系统适配",
+      "capability_ids": [
+        "CAP-007"
+      ],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "product/capabilities.json",
+          "locator": "CAP-007 scope",
+          "note": "样例外部标签动作已实现；青禾发券、标签连接器 W8 再开发"
+        },
+        {
+          "source": "W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+          "locator": "MSG-00768",
+          "note": "青禾真实系统情况需老周、小林核实，当前无可确认细节"
+        }
+      ],
+      "next_step": "按计划 W8 开发青禾发券与标签连接器；届时与老周确认接口与权限模式，并向陈姐了解门店触达通道"
+    },
+    {
+      "id": "GAP-009",
+      "request": "三个月内见到效果并向董事会有交代",
+      "category": "暂不承诺",
+      "capability_ids": [],
+      "evidence_status": "verified",
+      "evidence": [
+        {
+          "source": "W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+          "locator": "MSG-00764",
+          "note": "“三个月是我希望看到效果的周期，不是对结果的保证”"
+        },
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "第 1 段",
+          "note": "“三个月能看到效果，也好向董事会有个交代”是发起人期望"
+        }
+      ],
+      "next_step": "不承诺具体提升幅度；按 W2 多角色访谈、W3 SOW、W4-W5 真实数据 MVP 验证的节奏累积证据后再谈效果预期"
+    },
+    {
+      "id": "GAP-010",
+      "request": "生产环境运营条件：多用户隔离、生产认证、客户审计与灰度",
+      "category": "暂不承诺",
+      "capability_ids": [
+        "CAP-008"
+      ],
+      "evidence_status": "verified",
+      "evidence": [
+        {
+          "source": "product/capabilities.json",
+          "locator": "CAP-008",
+          "note": "生产运营为 extension_required：无多用户隔离、生产认证、客户审计与灰度，W9 扩展"
+        },
+        {
+          "source": "03_产品核查指引.md",
+          "locator": "末段",
+          "note": "产品可查询样例不代表已接入青禾数据；执行成功不代表业务效果"
+        }
+      ],
+      "next_step": "W9 按客户要求扩展并验证；W1-W8 阶段以样例与受控环境验证，不部署生产"
+    },
+    {
+      "id": "GAP-011",
+      "request": "摸清上个智能营销项目的遗留问题并在本次避开",
+      "category": "待判断",
+      "capability_ids": [],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "第 4 段",
+          "note": "“上个智能营销项目没做好，我认为供应商没有交付好”为沈总个人归因"
+        },
+        {
+          "source": "W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+          "locator": "MSG-00766",
+          "note": "沈总给不出技术故障、延期、使用情况等可确认细节"
+        }
+      ],
+      "next_step": "老周核实系统与接口遗留，小林核实运营使用与实际效果，王经理核对合同遗留事项，形成本次避开清单"
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+{
+  "created_at": "2026-10-22T03:02:23.467012+00:00",
+  "package_directory": "homework_w01",
+  "note": "原文件按字节复制。MANIFEST.json 保留发布包原始清单；本清单记录当前提交副本哈希。",
+  "excluded": [
+    ".venv",
+    ".runtime",
+    ".git",
+    ".qoder",
+    "node_modules",
+    "__pycache__",
+    "测试缓存",
+    "SQLite 数据库",
+    "用户环境配置与密钥",
+    "空白 Excel 模板"
+  ],
+  "publisher_manifest_differences": [
+    "evals/promptfooconfig.yaml",
+    "evals/provider.py",
+    "platform/fde_product/__init__.py",
+    "platform/fde_product/actions.py",
+    "platform/fde_product/agent.py",
+    "platform/fde_product/business.py",
+    "platform/fde_product/interaction.py",
+    "platform/fde_product/models.py",
+    "platform/fde_product/observability.py",
+    "platform/fde_product/tag_mock.py",
+    "platform/fde_product/web.py",
+    "pyproject.toml",
+    "tests/test_model_policy.py",
+    "tests/test_product_interaction.py",
+    "tests/test_product_v2.py",
+    "tools/check_product.py",
+    "tools/finalize_evaluation.py",
+    "tools/interaction_scenarios.py",
+    "tools/probe_custom_contract.mjs",
+    "tools/product.py",
+    "tools/run_custom_probe.py",
+    "tools/verify_product.py"
+  ],
+  "promptfoo_trace_mapping": [
+    {
+      "report_path": "/var/folders/w9/wtf23709749cvlxs9sf_ddd00000gn/T/fde-eval-02ju5zk9/trace.jsonl",
+      "package_path": "artifacts/w01/promptfoo-traces/fde-eval-02ju5zk9/trace.jsonl",
+      "available": true
+    },
+    {
+      "report_path": "/var/folders/w9/wtf23709749cvlxs9sf_ddd00000gn/T/fde-eval-3gs5or6l/trace.jsonl",
+      "package_path": "artifacts/w01/promptfoo-traces/fde-eval-3gs5or6l/trace.jsonl",
+      "available": true
+    },
+    {
+      "report_path": "/var/folders/w9/wtf23709749cvlxs9sf_ddd00000gn/T/fde-eval-6yr_cu22/trace.jsonl",
+      "package_path": "artifacts/w01/promptfoo-traces/fde-eval-6yr_cu22/trace.jsonl",
+      "available": true
+    },
+    {
+      "report_path": "/var/folders/w9/wtf23709749cvlxs9sf_ddd00000gn/T/fde-eval-dwrwhbco/trace.jsonl",
+      "package_path": "artifacts/w01/promptfoo-traces/fde-eval-dwrwhbco/trace.jsonl",
+      "available": true
+    },
+    {
+      "report_path": "/var/folders/w9/wtf23709749cvlxs9sf_ddd00000gn/T/fde-eval-ef2jktbc/trace.jsonl",
+      "package_path": "artifacts/w01/promptfoo-traces/fde-eval-ef2jktbc/trace.jsonl",
+      "available": true
+    },
+    {
+      "report_path": "/var/folders/w9/wtf23709749cvlxs9sf_ddd00000gn/T/fde-eval-gmjlmohw/trace.jsonl",
+      "package_path": "artifacts/w01/promptfoo-traces/fde-eval-gmjlmohw/trace.jsonl",
+      "available": true
+    },
+    {
+      "report_path": "/var/folders/w9/wtf23709749cvlxs9sf_ddd00000gn/T/fde-eval-yyknsxtz/trace.jsonl",
+      "package_path": "artifacts/w01/promptfoo-traces/fde-eval-yyknsxtz/trace.jsonl",
+      "available": true
+    }
+  ],
+  "files": [
+    {
+      "path": "MANIFEST.json",
+      "source": "MANIFEST.json",
+      "size_bytes": 4883,
+      "sha256": "efd4efbf4fe8a2a848fd7fae8f7a5105517b7be8fec329ee23b6b0c500ecb47e"
+    },
+    {
+      "path": "README.md",
+      "source": "README.md",
+      "size_bytes": 7563,
+      "sha256": "76176ed3136a4765318c079eb1b774dbde85aa229ddbc1489bc3e01f8df8c18b"
+    },
+    {
+      "path": "RELEASE.md",
+      "source": "RELEASE.md",
+      "size_bytes": 2510,
+      "sha256": "ea61eb8c337abf96668e356334eb33ae7c5dd1100281e672452d1262041ae843"
+    },
+    {
+      "path": "artifacts/w01/README.md",
+      "source": "artifacts/w01/README.md",
+      "size_bytes": 158,
+      "sha256": "5bfe0bfd5f25262dbd79cef82fd889a039efc2522a6ba1a1efae335dca547242"
+    },
+    {
+      "path": "artifacts/w01/environment_check.json",
+      "source": "artifacts/w01/environment_check.json",
+      "size_bytes": 959,
+      "sha256": "8510836426ad3a938ab93d0512dbab1f88d2fec06a6ca21de3fa8e009a2de77c"
+    },
+    {
+      "path": "artifacts/w01/evidence/analysis.json",
+      "source": "artifacts/w01/evidence/analysis.json",
+      "size_bytes": 15839,
+      "sha256": "e2ada6a0d09b86e104199f6740733a78293b41a8e3a25519759b1ef278a0a82f"
+    },
+    {
+      "path": "artifacts/w01/evidence/clarification.json",
+      "source": "artifacts/w01/evidence/clarification.json",
+      "size_bytes": 4202,
+      "sha256": "f2f47cde8a744c7dc690ee7cb902eb24c5d8090c0f05ad00e99a14b3926b2a7d"
+    },
+    {
+      "path": "artifacts/w01/evidence/date_button.json",
+      "source": "artifacts/w01/evidence/date_button.json",
+      "size_bytes": 34242,
+      "sha256": "c53661ca92710358617ed5c36d6e713b3fba92455e12baa1d5424f2928cba00d"
+    },
+    {
+      "path": "artifacts/w01/evidence/date_text.json",
+      "source": "artifacts/w01/evidence/date_text.json",
+      "size_bytes": 33934,
+      "sha256": "8e84fdd7c1caff57043e8e0c106e804ef02c2be1687645d58b7b4c69fdf2159b"
+    },
+    {
+      "path": "artifacts/w01/evidence/http_action.json",
+      "source": "artifacts/w01/evidence/http_action.json",
+      "size_bytes": 3286,
+      "sha256": "72bcaf682af6df6575ee908d011ddf0983eb5791c230a2dd18e4add6b048cf7f"
+    },
+    {
+      "path": "artifacts/w01/evidence/idempotency.json",
+      "source": "artifacts/w01/evidence/idempotency.json",
+      "size_bytes": 506,
+      "sha256": "ac7f3d0b727ff9be1ce0f5c2ad22dfc618779543299ace280f8e49fb81bfa0b3"
+    },
+    {
+      "path": "artifacts/w01/evidence/missing_coverage.json",
+      "source": "artifacts/w01/evidence/missing_coverage.json",
+      "size_bytes": 4777,
+      "sha256": "ef6948789d46f878bf6486125421977b22603f488b6a0e121f40858f7cf88754"
+    },
+    {
+      "path": "artifacts/w01/evidence/readonly.json",
+      "source": "artifacts/w01/evidence/readonly.json",
+      "size_bytes": 3830,
+      "sha256": "9253bb7258ec6d4e1d3702e301e70136b61eb3d959201fa65069a2e16d0e104b"
+    },
+    {
+      "path": "artifacts/w01/evidence/refund_explanation.json",
+      "source": "artifacts/w01/evidence/refund_explanation.json",
+      "size_bytes": 15839,
+      "sha256": "e2ada6a0d09b86e104199f6740733a78293b41a8e3a25519759b1ef278a0a82f"
+    },
+    {
+      "path": "artifacts/w01/evidence/reject_change.json",
+      "source": "artifacts/w01/evidence/reject_change.json",
+      "size_bytes": 9191,
+      "sha256": "1bbf23fde83591049ed8e73b71b89eb01e815fcdc5a5315d429eab549a6f1f85"
+    },
+    {
+      "path": "artifacts/w01/evidence/trace.jsonl",
+      "source": "artifacts/w01/evidence/trace.jsonl",
+      "size_bytes": 61142,
+      "sha256": "5800881b07dd2a8320030b0d4aec36892d627294596aadfdc7442b57a64b4405"
+    },
+    {
+      "path": "artifacts/w01/evidence/undo.json",
+      "source": "artifacts/w01/evidence/undo.json",
+      "size_bytes": 505,
+      "sha256": "ce7dfa978b52eea2405029ef61b56b435c8e23efdf8ba8975aded157e04a30e9"
+    },
+    {
+      "path": "artifacts/w01/model_baseline.json",
+      "source": "artifacts/w01/model_baseline.json",
+      "size_bytes": 2888,
+      "sha256": "cbc52f9c278b09fdc460dd378132b77e401a1ce4bbcf9bd924d594656277e767"
+    },
+    {
+      "path": "artifacts/w01/product_fit_gap.json",
+      "source": "artifacts/w01/product_fit_gap.json",
+      "size_bytes": 10621,
+      "sha256": "c3ba015fbf0e019295630dbec6294f699dbaf7aec4cb7c295dffd4c0566cb298"
+    },
+    {
+      "path": "artifacts/w01/product_fit_gap.xlsx",
+      "source": "artifacts/w01/product_fit_gap.xlsx",
+      "size_bytes": 13095,
+      "sha256": "3e0fa402ca42c3777555031124b6630a9d0522b9b15d79fb451d0f9f6eabddc0"
+    },
+    {
+      "path": "artifacts/w01/promptfoo-results.json",
+      "source": "artifacts/w01/promptfoo-results.json",
+      "size_bytes": 118394,
+      "sha256": "409f78ed6cfb0fe4fc0079231b577640e43f1ea6b4361096b7c10d864e6cacec"
+    },
+    {
+      "path": "artifacts/w01/promptfoo-traces/fde-eval-02ju5zk9/trace.jsonl",
+      "source": "Promptfoo 引用 trace：fde-eval-02ju5zk9/trace.jsonl",
+      "size_bytes": 3283,
+      "sha256": "17ba6462347b849d647bb8d3c4ee71e637229a80accd30d4bb25f8dd1ce55200"
+    },
+    {
+      "path": "artifacts/w01/promptfoo-traces/fde-eval-3gs5or6l/trace.jsonl",
+      "source": "Promptfoo 引用 trace：fde-eval-3gs5or6l/trace.jsonl",
+      "size_bytes": 5158,
+      "sha256": "e073aa114a40405006d0b4d343bc012c7d1d96a81bd92aab19d283bd0b690954"
+    },
+    {
+      "path": "artifacts/w01/promptfoo-traces/fde-eval-6yr_cu22/trace.jsonl",
+      "source": "Promptfoo 引用 trace：fde-eval-6yr_cu22/trace.jsonl",
+      "size_bytes": 4452,
+      "sha256": "3071df7b09c64936ee0090ca97b4d33664b6e5cbe6400f2ed2c0f88320336225"
+    },
+    {
+      "path": "artifacts/w01/promptfoo-traces/fde-eval-dwrwhbco/trace.jsonl",
+      "source": "Promptfoo 引用 trace：fde-eval-dwrwhbco/trace.jsonl",
+      "size_bytes": 4326,
+      "sha256": "1c0f178c40eb4b7ac22d31c3d4fad9257f89afe26f1a9b233c374bd3b4b790c9"
+    },
+    {
+      "path": "artifacts/w01/promptfoo-traces/fde-eval-ef2jktbc/trace.jsonl",
+      "source": "Promptfoo 引用 trace：fde-eval-ef2jktbc/trace.jsonl",
+      "size_bytes": 3962,
+      "sha256": "1ab66b1e5a5e70f4f8014625830206e21200b3e1171301338b3f4208fa3f1253"
+    },
+    {
+      "path": "artifacts/w01/promptfoo-traces/fde-eval-gmjlmohw/trace.jsonl",
+      "source": "Promptfoo 引用 trace：fde-eval-gmjlmohw/trace.jsonl",
+      "size_bytes": 5281,
+      "sha256": "2364ca61d20690ade182a37d589e44bee8e23e1c1ede70412fae7653ef87ee79"
+    },
+    {
+      "path": "artifacts/w01/promptfoo-traces/fde-eval-yyknsxtz/trace.jsonl",
+      "source": "Promptfoo 引用 trace：fde-eval-yyknsxtz/trace.jsonl",
+      "size_bytes": 1528,
+      "sha256": "c5dee8a61c8985e39d93878924d1ef90f3fe9c4b3e76c352631295303a38eb28"
+    },
+    {
+      "path": "artifacts/w01/runtime_evidence.json",
+      "source": "artifacts/w01/runtime_evidence.json",
+      "size_bytes": 3107,
+      "sha256": "1f3d2b6e5f807463466a2c080abbc00bd335cd02ed4b284ceac9a0ed817d7333"
+    },
+    {
+      "path": "connectors/README.md",
+      "source": "connectors/README.md",
+      "size_bytes": 158,
+      "sha256": "5bfe0bfd5f25262dbd79cef82fd889a039efc2522a6ba1a1efae335dca547242"
+    },
+    {
+      "path": "contracts/w01/environment_check.schema.json",
+      "source": "contracts/w01/environment_check.schema.json",
+      "size_bytes": 5504,
+      "sha256": "41dc13e3d7e8eee15adddea06f56e4e64c4fd3a8262a84e2a82b1786b79b9d5d"
+    },
+    {
+      "path": "contracts/w01/model_baseline.schema.json",
+      "source": "contracts/w01/model_baseline.schema.json",
+      "size_bytes": 2519,
+      "sha256": "461cbc608daf4d103e0986580370ee73f84a913d984bf99fcbc90ee952f570b6"
+    },
+    {
+      "path": "contracts/w01/product_fit_gap.schema.json",
+      "source": "contracts/w01/product_fit_gap.schema.json",
+      "size_bytes": 3280,
+      "sha256": "a8ab355c46a1c8927806329084e89c58ffd9e228c46556b944dc13564155fad3"
+    },
+    {
+      "path": "contracts/w01/runtime_evidence.schema.json",
+      "source": "contracts/w01/runtime_evidence.schema.json",
+      "size_bytes": 1384,
+      "sha256": "c1231dfeb3c7f6685284bb8ebcfa24b8d1c5024f023e92e911c15822af6d5ea9"
+    },
+    {
+      "path": "customer/README.md",
+      "source": "customer/README.md",
+      "size_bytes": 158,
+      "sha256": "5bfe0bfd5f25262dbd79cef82fd889a039efc2522a6ba1a1efae335dca547242"
+    },
+    {
+      "path": "docs/model-configuration.md",
+      "source": "docs/model-configuration.md",
+      "size_bytes": 6133,
+      "sha256": "26e24958a652f3a19f11b57d68b59166585a9a67ecfd7f2e44c6d939923183e7"
+    },
+    {
+      "path": "docs/project-documentation.md",
+      "source": "docs/project-documentation.md",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/w01/README.md",
+      "source": "docs/w01/README.md",
+      "size_bytes": 158,
+      "sha256": "5bfe0bfd5f25262dbd79cef82fd889a039efc2522a6ba1a1efae335dca547242"
+    },
+    {
+      "path": "docs/w01/project_assessment.md",
+      "source": "docs/w01/project_assessment.md",
+      "size_bytes": 9245,
+      "sha256": "4a4816b8b8d8512c1423dfcbd99f1a038b87dd92c76f063ad6c71c0a1bb90cc8"
+    },
+    {
+      "path": "evals/README.md",
+      "source": "evals/README.md",
+      "size_bytes": 2552,
+      "sha256": "cc27e619529b4dd58a70ee83d2018528ceaf2234eafe450108d3b9cc3f70067a"
+    },
+    {
+      "path": "evals/promptfooconfig.yaml",
+      "source": "evals/promptfooconfig.yaml",
+      "size_bytes": 3773,
+      "sha256": "b656dfe0ca0f023de631c4c2be2d460675c78cdb30037c262c67e2bad5e3f776"
+    },
+    {
+      "path": "evals/provider.py",
+      "source": "evals/provider.py",
+      "size_bytes": 1794,
+      "sha256": "c3709098159af459180a34f97a0659e9ccc0ef4a609ecf1ab9db0a93907defc8"
+    },
+    {
+      "path": "homework/W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+      "source": "../homework/W1-interview-cfa68d22-fba1-5d74-99eb-b75abeca9a8d-public.json",
+      "size_bytes": 4571,
+      "sha256": "a355cd514852c9f9e34c6456c9800ace86cfd8a73625a60042a7639569ecc35d"
+    },
+    {
+      "path": "homework/运行截图.png",
+      "source": "../homework/运行截图.png",
+      "size_bytes": 479241,
+      "sha256": "474875e0ee7cdc30f90b240d860d0e6eda81bcd74cc8c206acbfdba8587e723a"
+    },
+    {
+      "path": "materials/01_沈总立项邮件.md",
+      "source": "../04_材料包 20261018/01_沈总立项邮件.md",
+      "size_bytes": 1440,
+      "sha256": "1b1c67996218bd143ef80006a4d7b4db94be6293a53272fff8bc1845709d30db"
+    },
+    {
+      "path": "materials/02_公司与项目协作关系.md",
+      "source": "../04_材料包 20261018/02_公司与项目协作关系.md",
+      "size_bytes": 1766,
+      "sha256": "cc076503a23bd1e858ec5bf5edccc5ab80fd96d3660019aa2351900d6f81aa0a"
+    },
+    {
+      "path": "materials/03_产品核查指引.md",
+      "source": "../04_材料包 20261018/03_产品核查指引.md",
+      "size_bytes": 2157,
+      "sha256": "8805d831134ef8b578d5d41949a039085bf8cb30a9b88e45c3f75ac79ecc4a9e"
+    },
+    {
+      "path": "materials/04_立项四问与访谈提纲.md",
+      "source": "../04_材料包 20261018/04_立项四问与访谈提纲.md",
+      "size_bytes": 7766,
+      "sha256": "189ae1b6b0f69f204b0ee7768c80d7c46fb5615cc3161b647da66644a65f1a10"
+    },
+    {
+      "path": "materials/05_作业任务书.md",
+      "source": "../04_材料包 20261018/05_作业任务书.md",
+      "size_bytes": 14477,
+      "sha256": "03b6d38a3eee8ea4201cc16fce61749e3a887f11d2c1132cd71c14fc8d649710"
+    },
+    {
+      "path": "patches/README.md",
+      "source": "patches/README.md",
+      "size_bytes": 158,
+      "sha256": "5bfe0bfd5f25262dbd79cef82fd889a039efc2522a6ba1a1efae335dca547242"
+    },
+    {
+      "path": "platform/fde_product/__init__.py",
+      "source": "platform/fde_product/__init__.py",
+      "size_bytes": 188,
+      "sha256": "c45a8ef9a75b40a034c519f272472ddfdd077b6f964c7a063c5f2580e9da318f"
+    },
+    {
+      "path": "platform/fde_product/actions.py",
+      "source": "platform/fde_product/actions.py",
+      "size_bytes": 6850,
+      "sha256": "868cd710ec95b141219b13027382470252bf9490affe3f666cd924661d5f8668"
+    },
+    {
+      "path": "platform/fde_product/agent.py",
+      "source": "platform/fde_product/agent.py",
+      "size_bytes": 24482,
+      "sha256": "1c4882b46dd74a9def148dc33d9e2d761505c1f28cfa94d03864c5a980c8fb57"
+    },
+    {
+      "path": "platform/fde_product/business.py",
+      "source": "platform/fde_product/business.py",
+      "size_bytes": 10738,
+      "sha256": "aab03271bb42953b7940e72cccd7621c050a46062572a89df4cfbff2fccd12f9"
+    },
+    {
+      "path": "platform/fde_product/interaction.py",
+      "source": "platform/fde_product/interaction.py",
+      "size_bytes": 8614,
+      "sha256": "bd30f2eef540abfdbab73afdc579e83a8b2f0252077ff636dd8e7dc4a9f1ca3a"
+    },
+    {
+      "path": "platform/fde_product/models.py",
+      "source": "platform/fde_product/models.py",
+      "size_bytes": 13375,
+      "sha256": "aab03a56e4aa9b317b86a186d3c59c7d1afb4b12da947f228e41436f78e89f2b"
+    },
+    {
+      "path": "platform/fde_product/observability.py",
+      "source": "platform/fde_product/observability.py",
+      "size_bytes": 2108,
+      "sha256": "defa170cc3b858516395389016b579667e3c1d48fb6de9368b400b8a48adad6d"
+    },
+    {
+      "path": "platform/fde_product/tag_mock.py",
+      "source": "platform/fde_product/tag_mock.py",
+      "size_bytes": 6277,
+      "sha256": "709debc711c2d16f409bfc75cdae98775f1a190ed4448145e1ef9f6d28e8b1d2"
+    },
+    {
+      "path": "platform/fde_product/web.py",
+      "source": "platform/fde_product/web.py",
+      "size_bytes": 9885,
+      "sha256": "5d07cce29a33586a6e7e5ef5e3843e24a664ce987bfcf7f9b33d43c927b5b230"
+    },
+    {
+      "path": "product/API.md",
+      "source": "product/API.md",
+      "size_bytes": 7762,
+      "sha256": "6cbbe076e3f0a41596c08318bc437ed0f50ab1f5d06a2bc5a5419ba4c55418b4"
+    },
+    {
+      "path": "product/capabilities.json",
+      "source": "product/capabilities.json",
+      "size_bytes": 2080,
+      "sha256": "a7a090d59351d0f7bc47bb3da1c8f3bfb98cd1bc1e7f80031b7765478817ab25"
+    },
+    {
+      "path": "product/semantics.json",
+      "source": "product/semantics.json",
+      "size_bytes": 806,
+      "sha256": "067ce5f639b5f1fc0cbd31bd2234411cf4ac63ae35120981ec5ebcce9014fccf"
+    },
+    {
+      "path": "product/system_prompt.txt",
+      "source": "product/system_prompt.txt",
+      "size_bytes": 3806,
+      "sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd"
+    },
+    {
+      "path": "pyproject.toml",
+      "source": "pyproject.toml",
+      "size_bytes": 324,
+      "sha256": "91336444e3a40dbc58b66b695f0d00010e9f207321928216a1dbc1b487f748ae"
+    },
+    {
+      "path": "requirements.in",
+      "source": "requirements.in",
+      "size_bytes": 159,
+      "sha256": "504b446f4db406f05e9b4ded12a3aa7c5d97651b2b2bb3ba926680adde4be761"
+    },
+    {
+      "path": "requirements.txt",
+      "source": "requirements.txt",
+      "size_bytes": 1216,
+      "sha256": "95d1d286de05bda9af8ee2978a3f951cb521c427c8eb58173ca546127f610167"
+    },
+    {
+      "path": "sample_data/coverage.csv",
+      "source": "sample_data/coverage.csv",
+      "size_bytes": 101,
+      "sha256": "b5263cfe8ed0b78bd434c4fbc86199519a139be42b3d6719c4843d82d39130c6"
+    },
+    {
+      "path": "sample_data/manifest.json",
+      "source": "sample_data/manifest.json",
+      "size_bytes": 255,
+      "sha256": "e8126fd820112f2bf0269371c60a10947ca6238a0247a3e2a7136a777e35a6e3"
+    },
+    {
+      "path": "sample_data/members.csv",
+      "source": "sample_data/members.csv",
+      "size_bytes": 350,
+      "sha256": "7da3cf7d49f8344c762d4970fd84c9889947ea555a79eb8e96de6b666ea8fbe5"
+    },
+    {
+      "path": "sample_data/orders.csv",
+      "source": "sample_data/orders.csv",
+      "size_bytes": 575,
+      "sha256": "7cf490193976db79b285c4b063e6664cbf058588dc7e3d6719372d86d3d9cada"
+    },
+    {
+      "path": "sample_data/stores.csv",
+      "source": "sample_data/stores.csv",
+      "size_bytes": 69,
+      "sha256": "7236ae999d017ab627e54c56ad5607302313e278518ab51c0a7ca308026939ce"
+    },
+    {
+      "path": "tests/test_model_policy.py",
+      "source": "tests/test_model_policy.py",
+      "size_bytes": 7019,
+      "sha256": "bbe7e91ff658280e0b2c2aca968a4fa24792132231a36627acd1de5bc03b13e0"
+    },
+    {
+      "path": "tests/test_product_interaction.py",
+      "source": "tests/test_product_interaction.py",
+      "size_bytes": 12842,
+      "sha256": "bc15b4c93222b821be706b77a1213e430add2780b624bfd4cfec332f55b207a4"
+    },
+    {
+      "path": "tests/test_product_v2.py",
+      "source": "tests/test_product_v2.py",
+      "size_bytes": 14336,
+      "sha256": "6a511506a3b935fd77b74e6d39fce2b7c78e14ec2f5f0c3d42131e2f81173333"
+    },
+    {
+      "path": "tools/07_fit_gap_to_json.py",
+      "source": "tools/07_fit_gap_to_json.py",
+      "size_bytes": 10730,
+      "sha256": "7458bc1d6e05ed0051bcabb381727bb0b73cc7390d836997f0824a932d242342"
+    },
+    {
+      "path": "tools/check_product.py",
+      "source": "tools/check_product.py",
+      "size_bytes": 4514,
+      "sha256": "4104c8761741c459575b465a29b069dff7a59462229707f4634b930cf837817f"
+    },
+    {
+      "path": "tools/finalize_evaluation.py",
+      "source": "tools/finalize_evaluation.py",
+      "size_bytes": 1805,
+      "sha256": "cdde2f3fee4460279054748d4fcf96cbe867742148469d64c5b7bf602fe0c38c"
+    },
+    {
+      "path": "tools/interaction_scenarios.py",
+      "source": "tools/interaction_scenarios.py",
+      "size_bytes": 5542,
+      "sha256": "7f71ded725ba46a2b4dc0916d23d51fe321f42d2e83cd76590acf27c0d40075c"
+    },
+    {
+      "path": "tools/probe_custom_contract.mjs",
+      "source": "tools/probe_custom_contract.mjs",
+      "size_bytes": 6753,
+      "sha256": "a41094afec918a2dcf8a2c465013f6abaefa452213417aceb8e1fbc89bc7aca7"
+    },
+    {
+      "path": "tools/product.py",
+      "source": "tools/product.py",
+      "size_bytes": 3806,
+      "sha256": "83d62c06db1695484f9502a17270cc92cabd326d567869a6d5808f41c422f423"
+    },
+    {
+      "path": "tools/run_custom_probe.py",
+      "source": "tools/run_custom_probe.py",
+      "size_bytes": 1137,
+      "sha256": "7f126ec52d254c605e568ae4983c4c1d70965f1cfd2704b2d2b3c3ff7e7209c4"
+    },
+    {
+      "path": "tools/verify_product.py",
+      "source": "tools/verify_product.py",
+      "size_bytes": 8900,
+      "sha256": "06095ae81de4d230ea8c682dd563fb3a9bfbe137c0247ceb01d4fd728bcb9801"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# 此文件配置 pytest，不定义 Python 包构建或依赖；依赖由 requirements 文件管理。
+[tool.pytest.ini_options]
+# 测试直接导入 platform 下的 fde_product 源码包。
+pythonpath = ["platform"]
+# 默认只收集项目测试，避免遍历运行产物和第三方依赖目录。
+testpaths = ["tests"]
